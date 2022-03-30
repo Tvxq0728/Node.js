@@ -1,27 +1,27 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import ManufactureList from '../views/ManufactureList.vue'
-
-Vue.use(VueRouter)
-
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
+import AboutView from '../views/AboutView.vue'
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: '/', name: 'Home',
+    component: HomeView
   },
   {
-    path: '/manufacture-list',
-    name: 'ManufactureList',
-    component: ManufactureList
+    path: '/about', name: 'About',
+    component: AboutView
   }
 ]
-
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
-})
+const router = createRouter({ history: createWebHistory(process.env.BASE_URL), routes })
 
 export default router
+
+
+
+
+
+
+
+
+
+
+
