@@ -1,13 +1,25 @@
 <template>
   <div id="app">
-    <router-link to="/">ECサイトのトップページ</router-link>
-    <router-link to="/manufacture-list">
+    <button @click="topPage">
+      ECサイトのトップページ
+      </button>
+    <button @click="manufactureListPage">
       商品一覧ページ
-    </router-link>
-    <router-view></router-view>
+    </button>
   </div>
 </template>
-
+<script>
+  export default {
+    methods: {
+      topPage(){
+        this.$router.push({name: 'Home'})
+      },
+      manufactureListPage(){
+        this.$router.push({name: 'ManufactureList'});
+      }
+    }
+  }
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
