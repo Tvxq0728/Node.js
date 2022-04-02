@@ -1,16 +1,14 @@
-import { createRouter, createWebHistory } from 'vue-router'
+
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import ManufactureList from '../views/ManufactureList.vue'
 import DynamicRouteMatching from '../views/DynamicRouteMatching.vue'
-import { VueElement } from 'vue'
-
-Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home', component: HomeView
+    name: 'Home',
+    component: HomeView
   },
   {
     path: '/about',
