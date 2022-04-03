@@ -1,23 +1,17 @@
-// import Vue from 'vue'
+import { createRouter, createWebHistory } from 'vue-router'
+
+import Vue from 'vue'
 import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
-import ManufactureList from '../views/ManufactureList.vue'
+import VueRouter from 'vue-router'
 import DynamicRouteMatching from '../views/DynamicRouteMatching.vue'
+
+Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'HomeView',
     component: HomeView
-  },
-  {
-    path: '/about',
-    name: 'About', component: AboutView
-  },
-  {
-    path: '/manufacture-list',
-    name: 'ManufactureList',
-    component: ManufactureList
   },
   {
     path: '/dynamic-route-matching/:userId',
@@ -35,14 +29,3 @@ const router = createRouter({ history: createWebHistory(process.env.BASE_URL), r
 //   routes
 // })
 export default router
-
-
-
-
-
-
-
-
-
-
-
