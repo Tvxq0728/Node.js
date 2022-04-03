@@ -1,4 +1,4 @@
-
+// import Vue from 'vue'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import ManufactureList from '../views/ManufactureList.vue'
