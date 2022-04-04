@@ -1,11 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
-import Vue from 'vue'
+// import Vue from 'vue'
 import HomeView from '../views/HomeView.vue'
-import VueRouter from 'vue-router'
+// import VueRouter from 'vue-router'
 import DynamicRouteMatching from '../views/DynamicRouteMatching.vue'
 
-Vue.use(VueRouter)
+// Vue.use(VueRouter);
 
 const routes = [
   {
